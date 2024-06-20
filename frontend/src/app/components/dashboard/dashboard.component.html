@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+    <h1>Articles</h1>
+    <ul>
+      <li *ngFor="let article of articles">
+        <a [routerLink]="['/article', article._id]">{{ article.title }}</a>
+      </li>
+    </ul>
+  </div>
+  

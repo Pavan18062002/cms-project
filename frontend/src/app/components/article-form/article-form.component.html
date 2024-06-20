@@ -1,0 +1,12 @@
+<div class="article-form-container">
+    <form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+      <label for="title">Title</label>
+      <input id="title" formControlName="title" type="text">
+      
+      <label for="content">Content</label>
+      <textarea id="content" formControlName="content"></textarea>
+      
+      <button type="submit">Create Article</button>
+    </form>
+  </div>
+  
